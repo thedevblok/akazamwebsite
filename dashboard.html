@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akazam | Developer Dashboard</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_dash.css">
+
+    <!-- ICONSCOUT/FA -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/c0a254eec4.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="nav_dashboard">
+        <div class="container nav_container_dashboard"> 
+            <a href="index.html" class="nav_logo">
+                <img src="./images/logoalakazam.png" alt=""><h2>AKAZAM</h2>
+            </a>
+            <ul class="nav_menu nav_dash_ul">
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">Explorer</a></li>
+                <li><a href="#">Composer</a></li>
+                <li><a href="#">Mempool</a></li>
+                <li><a href="https://github.com/git-akazam">Git</a></li>
+                <li><a href="#">Enhanced APIs</a></li>
+            </ul>
+            <div>
+
+            </div>
+            <button class="menu-btn">
+                <i class="uil uil-bars"></i>
+            </button>
+            <button class="close-btn">
+                <i class="uil uil-multiply"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- END OF NAV -->
+    <!-- HERO SECTION -->
+    <!-- <header class="dashboard_header"> -->
+    <div class="dashboard_header">
+        <div class="container header_container">
+                <div class="dashboard_header_topsection">
+                    <p>Apps</p>  
+                    <a href="#" class="btn-clear-dashboard">+ Create app</a>
+                </div>
+            <div class="container header_content">
+                <div class="header_content_text">
+                    <h5 class="t-l">App</h5>
+                    <h5 class="t-l p-l-1r">Network</h5>
+                    <h5 class="t-r">Median respons</h5>
+                    <h5 class="t-r">Requests (24H)</h5>
+                    <h5 class="t-r">Throughput Limit (24H)</h5>
+                    <h5 class="t-r">Days on Akazam</h5>
+                    <h5 class="t-r">API key</h5>
+                </div>
+                <div class="header_content_information">
+                    <p class="dpf-cent">*App* <a href="#" class="btn-dashcard">View details</a></p>
+                    <p class="dpf-cent p-l-1r"><i class="fa-brands fa-ethereum app_icon"></i> Mainnet</p>
+                    <p class="t-r">-</p>
+                    <p class="t-r">0</p>
+                    <p class="t-r">0</p>
+                    <p class="t-r">100 days</p>
+                    <p class="t-r"><a href="">View key</a></p>
+                </div>
+            </div>   
+        </div>
+    </div>    
+    <!-- </header> -->
+    <!-- END OF HEADER -->
+    <!-- CARD SECTION #2 START -->
+    <section class="dashboard_app">
+        <div class="container dashboardapp_container">
+            <div class="dashboardapp_card">
+                <div class="app_card_topsection">
+                    <div class="dashboardcard_top">
+                        <div class="dbct_left">
+                            <p>
+                                *App*
+                                <a href="#" class="btn-appcard">View details</a>
+                            </p>
+                        </div>
+                        <div class="dbct_right">
+                            <i class="fa-brands fa-ethereum app_icon"></i>
+                            <p>Mainnet</p>
+                        </div>
+                    </div>
+                </div>
+               <div class="app_card_midsection">
+                 <div class="app_dynamic_blocks">
+                     <article class="dynamicblock_items">
+                        <p>Median respons</p>
+                        <h1>0ms</h1>
+                     </article>
+                     <article class="dynamicblock_items">
+                        <p>Total Requests</p>
+                       <h1>0</h1>
+                     </article>
+                     <article class="dynamicblock_items">
+                        <p>Throughput Limited % (24H)</p>
+                       <h1>0%</h1>
+                     </article>
+                     <article class="dynamicblock_items">
+                        <p>Invalid Requests (24H)</p>
+                       <h1>0</h1>
+                     </article>
+                 </div>
+               </div>
+               <div class="app_card_bottomsection">
+                <div class="app_dynamic_request">
+                    <img src="./images/request.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- CARD SECTION #2 END -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

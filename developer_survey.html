@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akazam | Developer Survey</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_dash.css">
+
+    <!-- ICONSCOUT/FA -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/c0a254eec4.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="nav_survey">
+        <div class="container nav_container nav_container_survey">
+            <a href="index.html" class="nav_logo">
+                <img src="./images/logoalakazam.png" alt=""><h2>AKAZAM</h2></a>
+            <button class="menu-btn">
+                <i class="uil uil-bars"></i>
+            </button>
+            <button class="close-btn">
+                <i class="uil uil-multiply"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- END OF NAV -->
+    <!-- SURVEY SECTION -->
+    <section class="survey_section">
+        <div class="survey_header">
+            <div class="container survey_container">
+                    <div class="survey_top">
+                        <h2>Akazam developer questionnaire</h2>  
+                    </div>
+                    <form action="" class="developer_survey_form">
+                        <div class="survey_questions">
+                            <label for="usecase_label"><h4>Do you want recommendations for your use case; If yes write a description of your Dapp <br> (No = Empty)</h4>
+                                <input type="text" id="usecase_label" placeholder="Dapp description"> </label>
+    
+                                <label for="walletfork"> <h4>Do you need wallet forks if yes choose <br> (No = None)</h4>
+                                    <select name="walletfork" id="walletfork_drop">
+                                        <option Name="Gitakaz">Metamask</option>
+                                        <option value="GlbLoc">Trustwallet</option>
+                                        <option selected Name="None">None</option>
+                                    </select>
+                                </label>
+                                <label for="amountVm"><h4>Choose the amount of Virtual Machines with current settings</h4>
+                                    <input type="text" id="amountVm_label" placeholder="Amount of VMs.."></label>
+
+                            <label for="stack"> <h4>Choose The End User Device</h4>
+                                <select name="stack" id="stack_drop">
+                                    <option value="Desktop">Desktop</option>
+                                    <option Name="Mobile">Mobile</option>
+                                </select>
+                            </label>
+                            <label for="chooseprogramlang"> <h4>Choose Programming languages</h4>
+                                <select name="chooseprogramlang" id="programlang_drop">
+                                    <option Name="Js">JavaScript</option>
+                                    <option value="Py">Python</option>
+                                    <option value="C">C#</option>
+                                    <option value="Java">Java</option>
+                                    <option value="Rust">Rust</option>
+                                    <option value="Go">Go</option>
+                                </select>
+                            </label>
+                            <label for="selfhosted"> <h4>Choose Self Hosted Git Solutions</h4>
+                                <select name="selfhosted" id="selfhosted_drop">
+                                    <option Name="Gitakaz">Gitakazam (IPFS & Local)</option>
+                                    <option value="GlbLoc">Gitlab (local)</option>
+                                    <option value="GlbLoc">Radicle</option>
+                                    <!-- <option value="Infura">Infura</option>
+                                    <option value="Alchemy">Alchemy</option>
+                                    <option value="Tgraph">The Graph</option> -->
+                                </select>
+                            </label>
+                        </div>
+                        <div class="survey_section_middle">
+                            <label for="buildonchain"> <h4>Which chain do you want to build on? (EVMs)</h4>
+                                <select name="buildonchain" id="buildonchain_drops">
+                                    <option value="Eth">Ethereum</option>
+                                    <option value="Poly">Polygon</option>
+                                    <option value="Arbit">Arbitrum</option>
+                                    <option value="Opti">Optimism</option>
+                                    <option value="Bnb">Bnb</option>
+                                    <option value="Ava">Avalanche</option>
+                                    <option value="Auro">Aurora</option>
+                                    <option value="Gnosis">Gnosis</option>
+                                </select>
+                            </label>
+                            <label for="nonevms"><h4>Build on Non-EVMs (Not available)</h4>
+                                <select name="nonevms" id="nonevmsdrop">
+                                    <option value="Cosmos">Cosmos (Rust)</option>
+                                    <option value="Lightning">Lightning Network (Clarity (LISP-based)</option>
+                                    <option value="RSK">Lightning Network (Solidity, RSK)</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="survey_section_bottom">
+                            <label for="choosenode"> <h4>Choose node services</h4>
+                                <select name="choosenode" id="choosenode_select_drop">
+                                    <option Name="Js">Self Hosted</option>
+                                    <option value="GoEth">Go Ethereum</option>
+                                    <option value="NetherC">Nethermind: c#</option>
+                                    <option value="EriJs">Erigon: js</option>
+                                    <option value="BesJs">Besu: java</option>
+                                    <option value="AkuRust">Akula Rust</option>
+                                </select>
+                            </label>
+                            <label for="Akazamnode">
+                                <h4>Akazam Automatic Nodes</h4>
+                                <select  name="Akazamnode" id="akazamnode_select_drop">
+                                    <option value="Light">Light</option>
+                                    <option value="Full">Full</option>
+                                    <option value="Archive">Archive</option>
+                                </select>
+                            </label>
+                            <label for="Naasnode" id="naasnode_select_drop">
+                                <h4>Naas</h4>
+                                <select  name="Naasnode" id="naasnode_select_drop">
+                                    <option value="Light">Akazam</option>
+                                    <option value="Full">Infura</option>
+                                    <option value="Archive">Alchemy</option>
+                                    <option value="NaaS">The Graph</option>
+                                </select>
+                            </label>
+                        </div>      
+                        <div class="simple_integ">
+                            <h3>« Web3 Simplified »</h3>
+                        </div>
+                        <div class="submitbtn_div">
+                            <a href="#" class="survey-btn"><span class="survey-submit">Akazam Deploy!</span></a>
+                        </div>
+                    </form>
+                </div>   
+            </div>
+        </section>
+    <!-- END OF SURVEY -->
+    <section class="endmsg">
+        <div class="survey_header">
+            <div class="container survey_container">
+                <div>
+                    <p>Our AI is generating recommendations for your application and a specialist from our 
+                        team will review your application and get in touch shortly. <br>Powered by Zira. <br> - <br>  </p>
+                </div>
+                    <div class="survey_top_end">
+                        <h2>Akazam</h2>  
+                    </div>
+                </div>   
+            </div>
+        </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>

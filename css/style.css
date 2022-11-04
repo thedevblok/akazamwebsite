@@ -77,7 +77,7 @@ h4 {
 }
 .lead {
     width: 63%;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5;
     margin: 1.5rem auto 3rem;
@@ -1009,4 +1009,8 @@ form .survey-btn:hover {
 }
 .nav_container_dashboard .nav_logo {
     color: white
+}
+
+.replt-container {
+    background-color: var(--color-bg1);
 }

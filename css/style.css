@@ -77,13 +77,14 @@ h4 {
 }
 .lead {
     width: 63%;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.5;
     margin: 1.5rem auto 3rem;
 }
 a {
     color: var(--color-white);
+    text-decoration: none;
 }
 nav a{
     color: var(--color-black);
@@ -492,14 +493,14 @@ input.w-button {
 }
 .card_1 {
     background-color: var(--color-bg4);
-    padding: 32px 3.5rem;
+    padding: 2rem;
     border-radius: 40px;
     overflow: hidden;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 .card_2 {
     background-color: var(--color-bg7);
-    padding: 32px 3.5rem;
+    padding: 2rem;
     border-radius: 40px;
     overflow: hidden;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
@@ -1011,6 +1012,245 @@ form .survey-btn:hover {
     color: white
 }
 
-.replt-container {
-    background-color: var(--color-bg1);
+
+
+/* =================================== MEDIA QUERIES (TABLETS)============================= */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    /* ====================== NAVBAR ===================== */
+    nav button{
+        display: block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--color-black);
+        cursor: pointer;
+    }
+    nav button#close-menu-btn {
+        display: none;
+    }
+    .nav_menu {
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        display: none;
+    }
+    .nav_menu li {
+        width: 100%;
+        height: 5.8rem;
+    }
+    .nav_menu li a{
+        background: var(--color-primary);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .nav_menu li a:hover {
+        background: var(--color-bg2);
+        color: var(--color-white);
+    }
+    /* ================= HEADER ================= */
+    .header_image {
+        height: 50%;
+    }
+    /* ================= USECASES ================= */
+    .usecases {
+        height: auto;
+    }
+    .usecases_container {
+        gap: 3rem;
+        grid-template-columns: 1fr;
+    }
+    .usecases_left {
+        margin-right: 0;
+    }
+    .card img {
+        border-radius: 25px;
+        width: 100%;
+        max-height: 15rem;
+    }
+    .cards {
+        background-color: var(--color-bg1);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* ============ FOOTER =================== */
+    .footer_container {
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+    .footer_logo {
+        justify-content: center;
+    }
+    .footer_1 p {
+        width: unset;
+    }
+    .subformfooterdiv {
+        display: flex;
+        justify-content: center;
+    }
+    .footer_socials {
+        justify-content: center;
+    }
+}
+/* ===================== HEADER RESPONSIVENES ============= */
+@media screen and (max-width: 915) {
+    .header_image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header_image {
+        display: none;
+    }
+    header{
+        background: url(/images/headerbg3.jpg) no-repeat top center/100vh;
+    }    
+    .lead {
+        margin: 1.5rem auto 2rem;
+    }
+}
+/* ===================== END HEADER RESPONSIVENES ============= */
+
+/* =================================== MEDIA QUERIES (PHONES)============================= */
+@media screen and (max-width: 600px) {
+    /* .container {
+        width: var(--container-width-sm);        
+    }    */
+    /* ====================== NAVBAR ===================== */
+    .nav_menu {
+        right: 3%;
+    }
+
+    /* ====================== HEADER ===================== */
+    header {
+        text-align: center;
+        max-width: 100vw;
+        padding-bottom: 2rem;
+    }
+    .header_title {
+        padding-top: 2rem;
+        font-size: 2.5rem;
+    }
+    section.usecases {
+        padding: 2rem 0;
+    }
+    /* ====================== USECASES ===================== */
+    .usecases_right {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+    .usecases_items {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .usecases_icon {
+        margin-top: 4px;
+        display: inline-block;
+    }
+    .usecases_items h4 {
+        margin: 1.5rem 0px 1rem;
+    }
+
+    /* ====================== CARDS ===================== */
+    .cards {
+        background-color: var(--color-bg1);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        padding: 2rem;
+    }
+    .cards_left {
+        margin-bottom: 0;
+    }
+    .cards_right {
+        display: none;
+    }
+    .cards_container {
+        padding: 0 0 4rem 0;
+    }
+    .cards_container:nth-child(2) {
+        padding: 0;
+        width: var(--container-width-sm);
+    }
+    /* ====================== PRICES ===================== */
+
+    /* ====================== FOOTER ===================== */
+    .footer_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    .footer_1 p {
+        margin: 1rem auto;
+    }
+    footer a:hover {
+        text-decoration: none;
+    }
+}
+
+/* =================================== MEDIA QUERIES (PRICE TABLE)============================= */
+@media screen and (max-width: 1240px) {
+    .princing_container {
+        width: var(--container-width-md);
+    } 
+    .pricing_card {
+        padding: 1rem 3.5rem;
+        padding-bottom: 2rem;
+        height: unset;
+    }
+}
+@media screen and (max-width: 991px) {
+    .pricing_card {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 50% 50%;
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(0 0 0 / 30%);
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 1rem 3.5rem;
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 654px) {
+    .cards_title {
+        padding-top: 2rem;
+        padding-bottom: 20px;
+    }
+    .pricing_card {
+        text-align: center;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+    .pricing_cards_left p{
+        padding-bottom: 2rem;
+    }
+    .pricing_3 {
+       margin-bottom: 2rem;
+    }
 }
